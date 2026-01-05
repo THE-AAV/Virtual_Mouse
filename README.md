@@ -1,59 +1,98 @@
-# Virtual Mouse
+# 🖱️ Virtual Mouse
 
-Making a virtual mouse using hand gestures through Python.
+[![Python](https://img.shields.io/badge/Python-3.7%2B-blue)]()  
+[![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)]()  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Control your computer mouse using **hand gestures** with Python!  
+This project leverages **computer vision** and **MediaPipe** to detect and interpret hand movements, enabling pointer control, clicking, and dragging — all without a physical mouse.
 
-## Overview
+---
 
-Virtual Mouse is a project that allows you to control your computer mouse using hand gestures. The project utilizes computer vision techniques to detect and interpret hand movements to control the mouse pointer.
+## 📖 Overview
+Virtual Mouse is an experimental project that demonstrates how computer vision can be applied to human-computer interaction.  
+It uses a webcam to track your hand and translates gestures into mouse actions.
 
-## Requirements
+✨ **Key Features**
+- Real-time hand gesture recognition  
+- Control mouse pointer with finger movements  
+- Click and drag functionality using gestures  
+- Simple and easy-to-use interface  
+- Built entirely in Python with OpenCV, MediaPipe, and PyAutoGUI  
 
-- Python version 3.7 to 3.11 (preferably 3.7.9)
-- mediapipe
-- opencv-python
-- pyautogui
+---
 
-## Features
+## 📂 Project Structure
+```
+Virtual_Mouse/
+├── Virtual_mouse.py   # Main script for gesture detection and mouse control
+├── README.md          # Documentation
+└── requirements.txt   # Dependencies
+```
 
-- Hand gesture recognition
-- Control mouse pointer using hand movements
-- Click and drag functionality using hand gestures
-- Simple and easy-to-use interface
+---
 
-## Installation
+## ⚙️ Requirements
+- Python 3.7 – 3.11 (recommended: 3.7.9)  
+- Dependencies:
+  - `mediapipe`
+  - `opencv-python`
+  - `pyautogui`
 
-To get started with the Virtual Mouse project, follow these steps:
+Install them with:
+```bash
+pip install mediapipe opencv-python pyautogui
+```
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/THE-AAV/Virtual_Mouse.git
-2. Navigate to the project directory:
-   ```sh
-   cd Virtual_Mouse
-3. Install the required dependencies.(refer Requirements section)
-   
-## Contributing
+---
 
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
-1. Fork the repository.
-2. Create a new branch with your feature or bugfix:
-   ```sh
-   git checkout -b my-new-feature
-3. Commit your changes:
-   ```sh
-   git commit -am 'Add new feature'
-4. Push the branch:
-   ```sh
-   git push origin my-new-feature
-5. Create a new Pull Request.
+## 🚀 Getting Started
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/THE-AAV/Virtual_Mouse.git
+cd Virtual_Mouse
+```
 
+### 2. Run the project
+```bash
+python Virtual_mouse.py
+```
 
+---
+
+## 🧪 How It Works
+1. The webcam captures your hand movements.  
+2. MediaPipe detects landmarks on your fingers.  
+3. OpenCV processes the video feed.  
+4. PyAutoGUI translates gestures into mouse actions.  
+
+---
+
+## 🔗 Example Gestures
+- **Move pointer** → Move your index finger  
+- **Click** → Pinch index finger and thumb together  
+- **Drag** → Hold pinch and move  
+
+---
+
+## 📚 Learning Goals
+This project helps you understand:
+- Basics of computer vision with OpenCV  
+- Gesture recognition using MediaPipe  
+- Automating mouse actions with PyAutoGUI  
+- Building intuitive human-computer interaction systems  
+
+---
+
+## 🤝 Contributing
+Contributions are welcome!  
+Fork the repo, submit issues, or open pull requests to add new gestures, improve accuracy, or enhance usability.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.  
+You are free to use, modify, and distribute it for educational and experimental purposes.
+
+---
